@@ -102,3 +102,6 @@ Train data의 accuracy는 학습량이 부족해 더 높아지지는 못했지�
 1. 우선 특징 추출을 사용한 model1과 model2는 두 분류기 모두 정확도가 50~70%로 나타나서 그다지 좋은 성능을 보여주지 않았습니다. Model1, 베이지안 분류기는 GLCM과 Law texture feature을 동시에 사용하는 것이 성능이 좋게 나왔습니다. 반면에 model2, MLP분류기에서는 law feature을 추가하지 않을 때 많은 차이는 없지만 비교적 더 좋은 성능을 보여주었습니다. 하지만 오차 범위는 더 적어지는 것을 볼 수 있었습니다. 
 2. MLP를 사용한 model2와 model3에서 model2는 그다지 좋은 성능을 보여주지 않았지만 model3에서는 loss값은 0.2, 정확도는 95%로 높은 성능을 보여줬습니다. 많은 학습 데이터가 있을 때 MLP는 RGB pixel값을 받을 때 더 좋은 성능을 보여준다는 것을 알 수 있었습니다.
 3. 마지막으로 CNN 분류기는 그래프를 보았을 때 다른 분류기와는 다르게 완만한 곡선을 이루고 있습니다. 굉장히 좋은 성능을 보여주고 있지만 epoch가 어느 시점을 지났을 때 overfitting이 나타난 것을 볼 수 있습니다. 그래서 epoch를 20으로 바꾸고 배치 사이즈를 20으로 바꿔서 학습한 결과 기존 모델보다 성능은 비슷하지만 overfitting으 나타나지 않았습니다.
+
+### Datasets
+https://www.kaggle.com/puneet6060/intel-image-classification
